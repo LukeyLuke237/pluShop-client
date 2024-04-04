@@ -8,6 +8,7 @@ import Cart from './components/Cart';
 import History from './components/History';
 import Register from './components/Register';
 import Checkout from './components/Checkout';
+import NotFound from './components/NotFound';
 
 function App() {
 
@@ -67,6 +68,7 @@ function App() {
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/register" element={<Register/>}></Route>
         <Route path="/checkout" element={<Checkout total={total} cart={cart} setCart={setCart}/>}></Route>
+        <Route path="*" element={<NotFound/>}></Route>
       </Routes>
     </div>
   );
