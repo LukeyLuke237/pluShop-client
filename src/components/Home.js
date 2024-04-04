@@ -13,7 +13,9 @@ const Home = (props) => {
     }
 
     if (props.loading) {
-        <h2>Getting our products information...</h2>
+        return (
+            <h2>Getting our products information...</h2>
+        )
     }
     else if (props.data.length !== 0) {
         return (
